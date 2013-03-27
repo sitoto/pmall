@@ -47,3 +47,4 @@ gem 'spree_fancy', :git => 'git://github.com/spree/spree_fancy.git'
 gem 'activemerchant', :require => 'active_merchant'
 gem 'activemerchant_patch_for_china', :git => 'git://github.com/flyerhzm/activemerchant_patch_for_china.git' #support alipay
 gem 'spree_alipay', :git => 'git://github.com/sitoto/spree_alipay.git'
+gem 'rvm-capistrano'
