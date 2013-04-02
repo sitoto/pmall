@@ -1,3 +1,4 @@
+#encoding: UTF-8
 # Configure Spree Preferences
 #
 # Note: Initializing preferences available within the Admin will overwrite any changes that were made through the user interface when you restart.
@@ -8,7 +9,7 @@
 Spree.config do |config|
   # Example:
   # Uncomment to override the default site name.
-  # config.site_name = "Spree Demo Site"
+  config.site_name = "80配汽配商城"
 end
 
 Spree.user_class = "Spree::User"

@@ -39,10 +39,11 @@ gem 'rails-i18n'
 
 # To use debugger
 # gem 'debugger'
-gem 'spree', '1.3.2'
+gem 'spree', :branch =>  '1-3-stable'
 gem 'spree_gateway', :github => 'spree/spree_gateway', :branch => '1-3-stable'
 gem 'spree_auth_devise', :github => 'spree/spree_auth_devise', :branch => '1-3-stable'
-gem 'spree_fancy', :git => 'git://github.com/spree/spree_fancy.git'
+gem 'spree_fancy', :git => 'git://github.com/sitoto/spree_fancy.git', :branch => '1-3-stable'
+
 
 gem 'activemerchant', :require => 'active_merchant'
 gem 'activemerchant_patch_for_china', :git => 'git://github.com/flyerhzm/activemerchant_patch_for_china.git' #support alipay
