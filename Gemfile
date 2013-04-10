@@ -1,4 +1,5 @@
-source 'http://ruby.taobao.org/'
+source 'http://rubygems.org'
+#source 'http://ruby.taobao.org/'
 
 gem 'rails', '3.2.13'
 
@@ -33,7 +34,7 @@ gem 'spree_i18n', :git => 'git://github.com/spree/spree_i18n.git'
 
 # Use unicorn as the app server
 # gem 'unicorn'
-
+gem 'passenger'
 # Deploy with Capistrano
 gem 'capistrano'
 
