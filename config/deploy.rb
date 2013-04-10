@@ -19,7 +19,7 @@ set :user, "ruby"
 set :deploy_to, "/home/ruby/www/#{application}"
 set :use_sudo, false
 
-#default_run_options[:shell] = '/bin/bash --login'
+default_run_options[:shell] = '/bin/bash --login'
 default_environment["RAILS_ENV"] = 'production'
 
 # if you want to clean up old releases on each deploy uncomment this:
