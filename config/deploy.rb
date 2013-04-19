@@ -35,7 +35,7 @@ namespace :deploy do
   end
 
   task :update_spreelink do 
-    run "ln -s {shared_path}/spree {current_path}/public/spree"
+    run "ln -s #{shared_path}/spree #{release_path}/public/spree"
   end
 
 end
