@@ -37,12 +37,12 @@ namespace :deploy do
   task :restart, :roles => :app, :except => { :no_release => true } do
     run "#{try_sudo} touch #{File.join(current_path,'tmp','restart.txt')}"
   end
-end
 
-namespace :file_link do 
-  task :start do
-    run "ln -s {shared_path}/public/spree {current_path}/public/spree"
+  task :update_spreelink do 
+    run "ln -s {shared_path}/spree {current_path}/public/spree"
   end
+
+
+
 end
 
-after "deploy:stop", "file_link:start"
