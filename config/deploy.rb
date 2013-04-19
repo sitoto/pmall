@@ -28,10 +28,6 @@ default_environment["RAILS_ENV"] = 'production'
 
 namespace :deploy do
   
-#  task :update_symlink do 
-#    run "ln -s {shared_path}/public/spree {current_path}/public/spree"
-#  end
-
   task :start do ; end
   task :stop do ; end
   task :restart, :roles => :app, :except => { :no_release => true } do
@@ -42,7 +38,6 @@ namespace :deploy do
     run "ln -s {shared_path}/spree {current_path}/public/spree"
   end
 
-
-
 end
 
+after "deploy:finalize_update", "deploy:update_spreelink"
