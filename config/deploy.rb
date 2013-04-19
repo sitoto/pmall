@@ -28,9 +28,9 @@ default_environment["RAILS_ENV"] = 'production'
 
 namespace :deploy do
   
-  task :update_symlink do 
-    run "ln -s {shared_path}/public/spree {current_path}/public/spree"
-  end
+#  task :update_symlink do 
+#    run "ln -s {shared_path}/public/spree {current_path}/public/spree"
+#  end
 
   task :start do ; end
   task :stop do ; end
@@ -38,3 +38,11 @@ namespace :deploy do
     run "#{try_sudo} touch #{File.join(current_path,'tmp','restart.txt')}"
   end
 end
+
+namespace :file_link do 
+  task :start do
+    run "ln -s {shared_path}/public/spree {current_path}/public/spree"
+  end
+end
+
+after "deploy:stop", "file_link:start"
