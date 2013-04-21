@@ -15,7 +15,7 @@ GIT
 
 GIT
   remote: git://github.com/sitoto/spree_fancy.git
-  revision: 60525b6479123c7d8b6c4c1dca4d4f5629e344b2
+  revision: 467b5654291999cf792135fb546af68a1c573516
   branch: 1-3-stable
   specs:
     spree_fancy (1.3.0)
@@ -100,7 +100,7 @@ GIT
 
 GIT
   remote: git://github.com/spree/spree_i18n.git
-  revision: 71f01c41a9b44957b6ec60259e837eed07444fb0
+  revision: b2635dc0acc82f0e1adcc34a7073c1a889fa308c
   specs:
     spree_i18n (1.0.0)
       i18n (~> 0.6)
@@ -238,7 +238,7 @@ GEM
       i18n (>= 0.4.0)
       mime-types (~> 1.16)
       treetop (~> 1.4.8)
-    mime-types (1.22)
+    mime-types (1.23)
     money (5.0.0)
       i18n (~> 0.4)
       json
