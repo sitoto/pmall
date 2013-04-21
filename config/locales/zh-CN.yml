@@ -1206,3 +1206,6 @@ zh-CN:
   zone_setting_description: "在各种计算中使用到的国家、省份、区域."
   zones: "区域"
   shop: "商城"
+  home_new: "新品"
+  home_hot: "销量"
+  home_fav: "人气"
