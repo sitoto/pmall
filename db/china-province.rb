@@ -1,21 +1,3 @@
-#encoding: UTF-8
-# This file should contain all the record creation needed to seed the database with its default values.
-# The data can then be loaded with the rake db:seed (or created alongside the db with db:setup).
-#
-# Examples:
-#
-#   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
-#   Mayor.create(name: 'Emanuel', city: cities.first)
-
-
-#Spree::Core::Engine.load_seed if defined?(Spree::Core)
-#Spree::Auth::Engine.load_seed if defined?(Spree::Auth)
-
-Spree::Country.delete_all
-
-Spree::Country.create!({"name"=>"中国", "iso3"=>"CHN", "iso"=>"CN", "iso_name"=>"CHINA", "numcode"=>"156"}, :without_protection => true)
-Spree::Config[:default_country_id] = Spree::Country.find_by_name("中国").id
-
 country = Spree::Country.find_by_name('中国')
 
 Spree::State.delete_all
@@ -51,11 +33,3 @@ Spree::State.create!({"name"=>"甘肃", "abbr"=>"GanSu", :country=>country}, :wi
 Spree::State.create!({"name"=>"青海", "abbr"=>"QingHai", :country=>country}, :without_protection => true)
 Spree::State.create!({"name"=>"宁夏", "abbr"=>"NingXia", :country=>country}, :without_protection => true)
 Spree::State.create!({"name"=>"新疆", "abbr"=>"XingJiang", :country=>country}, :without_protection => true)
-
-
-Spree::Zone.delete_all
-china = Spree::Zone.create!(:name => "China", :description => "大陆+港澳台")
-
-["中国"].each do |name|
-  china.zone_members.create!(:zoneable => Spree::Country.find_by_name!(name))
-end
