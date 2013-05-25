@@ -15,7 +15,7 @@ GIT
 
 GIT
   remote: git://github.com/sitoto/spree_fancy.git
-  revision: 7b3b571b17b6a96b8908d66594cc128d19f837e6
+  revision: a7861660461ff2e65498128554717677a39f7912
   branch: 1-3-stable
   specs:
     spree_fancy (1.3.0)
