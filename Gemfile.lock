@@ -6,7 +6,7 @@ GIT
 
 GIT
   remote: git://github.com/sitoto/spree_alipay.git
-  revision: cc9762ee9e905fc6cf25904760f314940258b991
+  revision: 0b791455f476791c1747c5160ad64317fe9d1406
   specs:
     spree_alipay (1.0.0)
       activemerchant
@@ -134,7 +134,7 @@ GEM
     active_utils (1.0.5)
       activesupport (>= 2.3.11)
       i18n
-    activemerchant (1.32.1)
+    activemerchant (1.33.0)
       active_utils (>= 1.0.2)
       activesupport (>= 2.3.14)
       builder (>= 2.0.0)
@@ -225,7 +225,7 @@ GEM
       rack
     i18n (0.6.1)
     journey (1.0.4)
-    jquery-rails (2.2.1)
+    jquery-rails (2.2.2)
       railties (>= 3.0, < 5.0)
       thor (>= 0.14, < 2.0)
     json (1.8.0)
