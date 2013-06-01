@@ -50,7 +50,7 @@ gem 'spree_static_content', :git => 'git://github.com/spree/spree_static_content
 
 
 gem 'activemerchant', :require => 'active_merchant'
-gem 'activemerchant_patch_for_china', :git => 'git://github.com/flyerhzm/activemerchant_patch_for_china.git' #support alipay
+gem 'activemerchant_patch_for_china', :git => 'git://github.com/sitoto/activemerchant_patch_for_china.git' #support alipay
 gem 'spree_alipay', :git => 'git://github.com/sitoto/spree_alipay.git'
 
 gem 'spree_editor', :github => "spree/spree_editor", :branch => '1-3-stable'

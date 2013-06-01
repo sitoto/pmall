@@ -1,6 +1,6 @@
 GIT
-  remote: git://github.com/flyerhzm/activemerchant_patch_for_china.git
-  revision: 6eae8e971fc975630f7049eca6c2eae110a74d76
+  remote: git://github.com/sitoto/activemerchant_patch_for_china.git
+  revision: 5f38b28a40dd9378d4591949559f4944b3127f1b
   specs:
     activemerchant_patch_for_china (0.2.0)
 
