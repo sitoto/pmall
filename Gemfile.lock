@@ -6,7 +6,7 @@ GIT
 
 GIT
   remote: git://github.com/sitoto/spree_alipay.git
-  revision: 01b9bcd66465627275877f3c8513a4b1d3343506
+  revision: 92907323513a1a08cd46b55afea60c2423edf78a
   specs:
     spree_alipay (1.0.0)
       activemerchant
