@@ -6,7 +6,7 @@ GIT
 
 GIT
   remote: git://github.com/sitoto/spree_alipay.git
-  revision: 15721b1a415a5233bae24b4fd5544697b2d1c464
+  revision: 01b9bcd66465627275877f3c8513a4b1d3343506
   specs:
     spree_alipay (1.0.0)
       activemerchant
@@ -240,7 +240,7 @@ GEM
     money (5.0.0)
       i18n (~> 0.4)
       json
-    multi_json (1.7.4)
+    multi_json (1.7.5)
     multi_xml (0.5.3)
     mysql2 (0.3.11)
     net-scp (1.1.1)
